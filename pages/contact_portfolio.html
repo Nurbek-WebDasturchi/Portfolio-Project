@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktda FullBuy</title>
+    <link rel="stylesheet" href="./umumiy.css">
+    <link rel="stylesheet" href="./contactcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--MAIN-HEADER-->
+    <header>
+        <div class="konteyner">
+            <div class="menyu-header__logo">
+                <a href="portfolio.html"></a>   
+            </div>
+            <nav class="menyu-navigatsiya">
+                <ul class="menyu-navigatsiya__item ">
+                    <li class="menyu-navigatsiya__item active">
+                        <a href="portfolio.html">Asosiy</a>
+                    </li>
+                    <li class="menyu-navigatsiya__item">
+                        <a href="#">Men haqimda</a>
+                    </li>
+                    <li class="menyu-navigatsiya__item">
+                        <a href="#">Xizmatlar</a>
+                    </li>
+                    <li class="menyu-navigatsiya__item">
+                        <a href="#">Mijozlar</a>
+                    </li>
+                    <li class="menyu-navigatsiya__item">
+                        <a href="#">Mening ishlarim</a>
+                    </li>
+                    <li class="menyu-navigatsiya__item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="menyu-navigatsiya__item">
+                        <a href="#">Sheriklar</a>
+                    </li>
+                    <li class="menyu-navigatsiya__item">
+                        <a href="./contact_portfolio.html" target="_blank">Kontakt</a>
+                    </li>
+                </ul>   
+            </nav>
+        </div>  
+        <div class="clearfix"></div> 
+    </header>
+    <!--/MAIN-HEADER-->
+    <div class="konteyner">
+        <h2 class="contact_text">
+            boglan
+        </h2>
+        <section class="contact">
+            <div class="contact_text">
+                Men bilan bog'laning
+            </div>
+            <form action="server.php" method="get">
+                <textarea placeholder="Xabar qoldiring" name="textarea" rows="20" cols="100"></textarea><br>
+                <div class="half-row">
+                    <input type="text" name="message" placeholder="Isminggizni kiriting">
+                </div>
+                <div class="half-row">
+                    <input type="email" name="email" placeholder="E-mail qoldiring">
+                </div>
+                <input type="text" name="subject" placeholder="Xabarinngiz mazmuni"><br>
+                <button type="submit" name="button">Yuborish</button>
+            </form>
+            <div class="call-item">
+                <div class="image-position">
+                     <img src="./rasm/home-address-icon.png" alt="KOMPUTERING KO'TARMAYDI">
+                     <h5 class="contact_text1">O'zbekiston,Qoraqolpog'iston Res, Amudaryo tumani</h5>
+                </div>
+                <div class="image-position">
+                    <img src="./rasm/phone-icon.png" alt="PCing ko'torolmaydi!">
+                    <h5 class="contact_text1">+998 88 508 26 04</h5>
+                </div>
+                <div class="image-position">
+                    <img src="./rasm/envelope-icon.png" alt="PCing ko'tarolmidi, derazadan uloqtirsang ham bo'ladi!">
+                    <h5 class="contact_text1">ahmedovnurbek@gmail.com</h5>
+                </div>   
+            </div>
+        </section>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Asosiy</a>
+                </li>
+                <li>
+                    <a href="#">Men haqimda.</a>
+                </li>
+                <li>
+                    <a href="#">Xizmatlar</a>
+                </li>
+                <li>
+                    <a href="#">Mijozlar</a>
+                </li>
+                <li>
+                    <a href="#">Mening ishlarim</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Sheriklar</a>
+                </li>
+                <li>
+                    <a href="./contact_pportfolio.html">Kontakt</a>
+                </li>
+    
+            </ul>
+        </nav>
+        <form action="./server.php" method="get">
+            <button class="box" type="submit">Kirish</button>
+        </form>
+    </footer>
+</body>
+</html>

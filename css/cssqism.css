@@ -1,0 +1,622 @@
+/*MENYU-SECTION */
+header {
+    background-image: url("./home-banner.png");
+    /* background-clip: border-box; */
+    background-size: cover;
+    background-position: center;
+    /* background-position: 100%; */
+    background-repeat: no-repeat;
+}
+.main-section {
+    padding: 6.25rem 0rem 0rem 2.8rem; /*100/16=6.25rem 50/16=3.2ren */
+    display: flex;
+    margin-top: 40px;
+}
+.logo-image {
+    height: 70px;
+    width: 70px;
+}
+.Murojat {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+    letter-spacing: 2px;
+    color: #797979;
+}
+.main-section__name {
+    margin-top: 1.25rem;
+    font-size: 3.75rem;
+    font-weight: 500;
+    margin-bottom: 1.25ren;
+    color: #05364e;
+}
+.main-section__kasb {
+    color: #05364d;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+}
+/* Ijtimoiy tarmoqlar */
+#telegram {
+    color: rgb(34, 90, 211);
+}
+#youtube {
+    color: red;
+}
+#instagram {
+    color: #e36728;
+}
+.ijtimoiy-tarmoq__sozlama {
+    display: inline-block;
+}
+.ijtimoiy-tarmoq__sozlama a {
+    color: #1c44e4;
+    display: inline-block;
+    font-size: 1.875rem;
+    margin-right: 0.75rem;
+    cursor: pointer;
+}
+.ijtimoiy-tarmoq__sozlama a:hover i {
+    color: rgb(0, 132, 255);
+}
+.main-section__tugma {
+    margin-top: 1.875rem;
+}
+.section-statistika {
+    position: relative;
+    bottom: -50px;
+    padding: 6.25rem 6.25rem 6.25rem 0rem;
+    display: flex;
+    justify-content: start;
+    /* margin-top: 50px; */
+}
+.statistika {
+    width: 150px;
+    background-color: #d3d6dc;
+    text-align: center;
+    padding: 0.32rem 0.625rem;
+    margin-right: 1.25rem;
+}
+.statistika__number {
+    font-weight: bold;
+    font-size: 1.6875rem;
+    margin-bottom: 0.32rem;
+    background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.statistika__text {
+    font-size: 1rem;
+    background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 300;
+}
+.about-me {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+.about-me > div {
+    flex: 1;
+}
+.about-me__image img {
+    width: 90%;
+}
+.about-me__sarlavha {
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #797979;
+    text-transform: uppercase;
+}
+.about-me__theme {
+    font-weight: 600;
+    font-size: 2.625rem;
+    color: #05364d;
+    margin-top: 0.32rem;
+}
+.about-me__textinfo {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #797979;
+    line-height: 27px;
+}
+.about-me__pozition {
+    margin-top: 40px;
+}
+.blur-line {
+    display: inline-block;
+    margin-left: 0.32rem;
+    width: 80px;
+    height: 4px;
+    background-color: red;
+    filter: blur(4px);
+    border-radius: 4px;
+}
+/* Mening xizmatlarim*/
+.xizmatlarim {
+    padding: 24px; /*  6.35rem */
+    width: 1500px;
+    position: relative;
+}
+.xizmat-card {
+    margin-top: 20px;
+    width: 32%;
+    background-color: #f8faff;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.8s ease;
+}
+.xizmat-card:hover {
+    background-color: #5f30ff;
+}
+.xizmat__turi {
+    color: #05364d;
+    padding: auto;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+.xizmat__info {
+    font-size: 0.875rem;
+    line-height: 27px;
+    font-family: "" Noto Sans ", sans-serif";
+    font-weight: 300;
+    color: #797979;
+    padding: 15px;
+}
+.xizmat__ilova {
+    position: relative;
+    text-decoration: none;
+    margin-top: 0;
+    font-size: 0.825rem;
+    display: inline-block;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #05364d;
+    /* text-decoration: none; */
+    /* padding-bottom: 40px; */
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+.xizmat__ilova:hover {
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+}
+
+.xizmat__ilova::after {
+    content: ""; /* Psevd-element yaratamiz */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Qalinligi borderga o'xshash */
+    background: linear-gradient(
+        to right,
+        rgb(40, 40, 201),
+        #ed239f
+    ); /* Gradient effekti */
+    transition: all 0.5s ease; /* Hover paytida o'tish effekti */
+}
+.xizmat__ilova:hover::after {
+    background: linear-gradient(
+        to right,
+        green,
+        purple
+    ); /* Hover paytida rang o'zgaradi */
+}
+/* .xizmat-card:hover {
+    animation-name: BackHover;
+    animation-timing-function: 2s;
+    animation-delay: 2s;
+} */
+.xizmat-card:hover .xizmat__turi,
+.xizmat-card:hover .xizmat__info,
+.xizmat-card:hover .xizmat__ilova {
+    color: #ffffff;
+}
+svg {
+    height: 300px;
+    width: 30%;
+}
+.xizmat__theme {
+    font-size: 2.625rem;
+    text-transform: capitalize;
+    color: #05364d;
+    margin-top: 0.32rem;
+    font-weight: 600;
+}
+/* Xaridor qism */
+.user-comment img {
+    position: relative;
+    right: -40px;
+    /* bottom: 12%; */
+}
+.client-message {
+    background-color: #f8faff;
+}
+.client-comment {
+    background-color: #f8faff;
+    border: 2px solid white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.xaridor-qism > div {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+.xaridor-qism__name {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+.xaridor-qism__lavozimi {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #e36728;
+}
+.xaridor-qism__fikri {
+    font-size: 0.875rem;
+    line-height: 20px;
+    font-weight: 360;
+    color: #5252af;
+}
+.img-client {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.qoniqarli {
+    color: yellow;
+}
+.about-me__image {
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+.main-section__image {
+    height: 700px;
+    width: 75%;
+    position: relative;
+    top: 20px;
+}
+.portfolio-item__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 100%;
+    transition: all 0.4s ease 0s;
+}
+.portfolio-item__overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 800px;
+    width: 100%;
+    transition: all 0.4s ease 0s;
+}
+.portfolio-item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 50%;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    z-index: 6;
+    right: 10px;
+    height: 800px;
+}
+.portfolio-item__info1 {
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    color: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 250px;
+    padding-left: 70px;
+    transition: all 0.4s ease 0s;
+}
+.portfolio-item__info1 a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+.portfolio-item:hover .portfolio-item__info1 {
+    visibility: visible;
+    top: 20px;
+    left: 20px;
+    opacity: 1;
+}
+.portfolio-item__info2 {
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    color: #ffffff;
+    visibility: hidden;
+    padding-top: 6.25rem;
+    padding-left: 4.375rem;
+    transition: all 0.4s ease 0s;
+    opacity: 0;
+}
+.portfolio-item__info2 a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+.portfolio-item:hover .portfolio-item__info2 {
+    visibility: visible;
+    top: 20px;
+    left: 20px;
+    opacity: 1;
+}
+.portfolio-item__info3 {
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 6.25rem;
+    padding-left: 4.375rem;
+    transition: all 0.4s ease 0s;
+}
+.portfolio-item__info3 a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+.portfolio-item:hover .portfolio-item__info3 {
+    visibility: visible;
+    top: 20px;
+    left: 20px;
+    opacity: 1;
+}
+
+.portfolio-item:hover .portfolio-item__overlay {
+    visibility: visible;
+    left: 20px;
+    top: 20px;
+    background: rgba(19, 69, 230, 0.9);
+}
+.portfolio-item:hover .portfolio-item__overlay1 {
+    visibility: visible;
+    left: 20px;
+    top: 20px;
+    background: rgba(19, 69, 230, 0.9);
+}
+.portfolio-item__image {
+    height: 800px;
+    width: 100%;
+    padding-top: 3px;
+}
+.portfolio-item2 {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    width: 50%;
+    top: 0;
+    right: 0;
+    height: 400px;
+    z-index: 5;
+    right: 20px;
+}
+.portfolio-item__image2 {
+    height: 400px;
+    width: 100%;
+}
+.portfolio-items {
+    position: relative;
+    margin-top: 3.2rem;
+}
+.portfolio-item3 {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    width: 50%;
+    top: 400px;
+    right: 20px;
+    z-index: 3;
+}
+.portfolio-item__image3 {
+    width: 100%;
+    height: 400px;
+    padding-top: 0.625rem;
+}
+.portfolio-item3:hover .portfolio-item__overlay {
+    visibility: visible;
+    left: 20px;
+    top: 20px;
+}
+/* Blog qism*/
+.blog-items {
+    margin-top: 3.2rem;
+}
+.blog-item {
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #e0e2e6;
+}
+.blog-item:hover .blog-item__image img {
+    transform: scale(1.1);
+}
+.blog-item__info {
+    background-color: #f8faff;
+    padding: 1.875rem;
+    color: #797979;
+}
+.blog-item__image img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.4s ease 0s;
+}
+.blog-item__image {
+    overflow: hidden;
+}
+.blog-item__infomenu span {
+    font-size: 0.875rem;
+    margin-right: 1.875rem;
+    font-weight: lighter;
+}
+.blog-item__info i {
+    margin-right: 0.32rem;
+}
+.blog-item__title {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.9375rem;
+    color: #05364d;
+    font-weight: 700;
+}
+.blog-item__text {
+    line-height: 1.0625rem;
+    font-weight: lighter;
+    font-size: 0.9375rem;
+}
+.blog-item__more {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #05364d;
+    text-decoration: none;
+    cursor: pointer;
+}
+.blog-item__more:hover {
+    color: #ed239f;
+}
+.blog-item:hover {
+    box-shadow: 0px 10px 20px rgb(5 54 77 / 10%);
+}
+.blog-tem:hover .blog-item__info {
+    background-color: white;
+}
+.image {
+    width: 289.44px;
+    height: 418.55px;
+}
+.homiylar {
+    padding-top: 6.25rem;
+    padding-left: 45px;
+}
+.homiy {
+    display: inline-block;
+    padding: 0 30px;
+}
+.image1 {
+    width: 100px;
+    height: 100px;
+}
+.image2 {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    top: 30px;
+}
+.image3 {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    top: 30px;
+}
+.image4 {
+    width: 150px;
+    height: 120px;
+    position: relative;
+    top: 28px;
+}
+.image5 {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    top: 30px;
+}
+@media only screen and (max-width: 767px) {
+    .menyu-bunner {
+        background: none;
+    }
+    .main-section__image {
+        display: none;
+    }
+    .main-section__tugma {
+        display: none;
+    }
+    .statistika {
+        margin-top: 0;
+        width: 100%;
+    }
+    .menyu-bunner {
+        height: 100px;
+        width: 100%;
+    }
+    .section-statistika {
+        margin-top: 0;
+    }
+    .about-me__image {
+        display: none;
+    }
+    .about-me__button {
+        display: none;
+    }
+    .about-me_textinfo {
+        width: 100%;
+    }
+    .xizmat-card {
+        width: 100%;
+    }
+    .xaridor-qism__image img {
+        width: 100%;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .xaridor-qism__info {
+        width: 100%;
+    }
+    .xaridor-qism__name,
+    .xaridor-qism__fikri,
+    .xaridor-qism__lavozimi,
+    .xaridor-qism__yulduzchalar {
+        width: 100%;
+        display: inline-block;
+    }
+    .xaridor-qismlar {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .xaridor-qism > div {
+        width: 100%;
+    }
+    .blog-item {
+        width: 100%;
+        height: 100px;
+    }
+    .main-section > div {
+        width: 100%;
+    }
+    .qoshimcha-div {
+        margin-bottom: 10px;
+        margin-left: 150px;
+        display: inline-block;
+    }
+    .about-me > div {
+        width: 100%;
+    }
+    .xaridor-qism__image img {
+        height: 300px;
+        width: 300px;
+        margin-left: 150px;
+    }
+    .portfolio-item {
+        width: 100%;
+    }
+    .portfolio-item2,
+    .portfolio-item3 {
+        position: static;
+    }
+}
